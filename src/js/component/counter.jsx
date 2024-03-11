@@ -10,12 +10,12 @@ const Counter = () => {
 	
 
 	return (
-		<div className="text-center d-flex" style={{margin:"5 auto"}}>
-			<h1 className="p-5 bg-dark text-white rounded-4"><i class="bi bi-stopwatch"></i></h1>
+		<div className="text-center d-flex" style={{ margin: "5px auto", width: "80%" }}>
+			<h1 className="p-5 bg-dark text-white rounded-4"><i className="bi bi-stopwatch"></i></h1>
 
-			{[...timer.toString().padStart(6, '0')].map((number, index) => {
+			{[...timer.toString().padStart(6, '0')].map((number, index) => 
 				<h1 className="p-5 bg-dark text-white rounded-4" key={index}>{number}</h1>
-			})}
+			)}
 		</div>
 	);
 };
